@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn run turbo:command build",
+    "turbo:command": "yarn turbo",
+    "lint": "yarn run turbo:command lint",
+    "lint:fix": "yarn run turbo:command lint:fix", 
+    "format": "yarn run turbo:command format",
+    "format:check": "yarn run turbo:command format:check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  
   "dependencies": {
     "turbo": "^2.6.1"
   }
